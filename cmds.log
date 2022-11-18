@@ -1,0 +1,1002 @@
+   38  cat 0439139597.txt.old | tr ',' " " | tr ';' " " | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| sed -e 's/\.//g'| sed -e 's/\.//g'| sed 's/<[^>]*>//g ; /^$/d' | > 0439139597.txt.new
+   39  ls
+   40  cat 0439139597.txt.new | head -2
+   41  cat 0439139597.txt.old | head -2
+   42  ls
+   43  rm 0439139597.txt.old 
+   44  rm New0439139597.txt 
+   45  rm 0439139597.txt.new
+   46  ls
+   47  cat 0439139597.txt.old | tr ',' " " | tr ';' " " | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| sed -e 's/\.//g'| sed -e 's/\.//g'| sed 's/<[^>]*>//g ; /^$/d' | > /mnt/scratch/eric/ws7/0439139597.txt.new
+   48  cat 0439139597.txt.old | tr ',' " " | tr ';' " " | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| sed -e 's/\.//g'| sed -e 's/\.//g'| sed 's/<[^>]*>//g ; /^$/d' | > /mnt/scratch/eric/ws7/New0439139597.txt
+   49  cat 0439139597.txt.old | tr ',' " " | tr ';' " " | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| sed -e 's/\.//g'| sed -e 's/\.//g'| sed 's/<[^>]*>//g ; /^$/d' | > /mnt/scratch/eric/ws7/newOutput.txt
+   50  cat 0439139597.txt.| tr ',' " " | tr ';' " " | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| sed -e 's/\.//g'| sed -e 's/\.//g'| sed 's/<[^>]*>//g ; /^$/d' | > /mnt/scratch/eric/ws7/New0439139597.txt
+   51  cat 0439139597.txt| tr ',' " " | tr ';' " " | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| sed -e 's/\.//g'| sed -e 's/\.//g'| sed 's/<[^>]*>//g ; /^$/d' | > /mnt/scratch/eric/ws7/New0439139597.txt
+   52  ls
+   53  rm newOutput.txt 
+   54  ls
+   55  rm 0439139597.txt.new 
+   56  ls
+   57  cat New0439139597.txt | head -2
+   58  cat New0439139597.txt | head -5
+   59  cd /mnt/scratch/eric
+   60  ls
+   61  cd a4
+   62  ls
+   63  cd -
+   64  ls
+   65  mv Q1.csv /mnt/scratch/a4
+   66  cp Q1.csv /mnt/scratch/a4
+   67  clear
+   68  ls
+   69  cd
+   70  ls
+   71  cp amazon_reviews_us_Books_v1_02.tsv /mnt/scratch/eric
+   72  cd /mnt/scratch/eric
+   73  ls
+   74  head -2 amazon_reviews_us_Books_v1_02.tsv 
+   75  cut -f4 amazon_reviews_us_Books_v1_02.tsv | head -3
+   76  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+   77  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | tail -1
+   78  grep '0000000116
+   79  grep '0000000116' amazon_reviews_us_Books_v1_02.tsv 
+   80  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | head -1
+   81  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | head -3
+   82  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | head -2
+   83  clear
+   84  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | head -2
+   85  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | tr ',' '\n' | head -2
+   86  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | tr ' ' '\n' | head -2
+   87  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | tr ',' | head -2
+   88  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | tr ','  | head -2
+   89  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | tr ',' " " | head -2
+   90  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | tr ',' " "| sed -e 's/\.//g'| head -2
+   91  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | tr ',' " "| tr ';' " "| sed -e 's/\.//g'| head -2
+   92  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<Goblet\>//g'| head -2
+   93  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<Harry Potter\>//g'| head -2
+   94  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<and\>//g'| head -2
+   95  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<and/AND\>//g'| head -2
+   96  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<and\><Harry Potter>//g' | head -2
+   97  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<and\>//g' | head -2
+   98  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<Goblet\>//g' | head -2
+   99  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<Goblet\>//g' |sed 's/\<Goblet\>//g' | head -2
+  100  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<Harry\>//g' |sed 's/\<Goblet\>//g' | head -2
+  101  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| head -2
+  102  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| head -2
+  103  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<<br />\>//g'
+  104  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<"<br />"\>//g'
+  105  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\< <br /> \ >//g'| head -2
+  106  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\< [<br />] \ >//g'| head -2
+  107  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\< [<br />]\ >//g'| head -2
+  108  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\< [<br/>]\ >//g'| head -2
+  109  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\< [<br />]\ >//g'| head -2
+  110  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/\<[<br />]\>//g'| head -2
+  111  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's|<br />|g'| head -2
+  112  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's|<br />|/g'| head -2
+  113  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's|<br />|-g'| head -2
+  114  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv | sed 's/<[^>]*>//g ; /^$/d' | head -2
+  115  clear
+  116  ls
+  117  mkdir ws7
+  118  cd ws7
+  119  script ws7.txt
+  120  cd -
+  121  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv > /mnt/scratch/eric/a7/043913597.txt
+  122  grep '0439139597' amazon_reviews_us_Books_v1_02.tsv > /mnt/scratch/eric/ws7/043913597.txt
+  123  cd ws7
+  124  ls
+  125  head -3 043913597.txt 
+  126  grep 043913597.txt | tr ',' " " | tr ';' " " | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| head -2
+  127  echo 043913597.txt | tr ',' " " | tr ';' " " | head -2
+  128  cat 043913597.txt | tr ',' " " | tr ';' " " | head -2
+  129  cat 043913597.txt | tr ',' " " | tr '?' " " | head -2
+  130  cat 043913597.txt | tr ',' " " | tr ';' " " | head -2
+  131  cat 043913597.txt | tr ',' " " | tr ';' " " > 043913597.txt 
+  132  cat 043913597.txt | sed 's/\<and\>//g' |sed 's/\<or\>//g' | sed 's/\<if\>//g'| sed 's/\<in\>//g'| sed 's/\<it\>//g'| head -2
+  133  cat 043913597.txt | sed 's/\<and\>//g' | head -2
+  134  cat 043913597.txt | sed 's/\<and\>//g' 
+  135  cat 043913597.txt | head -2
+  136  cat 043913597.txt | head -5
+  137  ls
+  138  rm 043913597.txt 
+  139  script ws7.txt
+  140  ls
+  141  rm 0439139597.txt 
+  142  script ws7.txt
+  143  history > cmds.log
+  144  ls
+  145  rm 0439139597.txt 
+  146  rm New0439139597.txt 
+  147  vi ws7.txt
+  148  vi ws7.txt| tail -3
+  149  cat ws7.txt | tail -3
+  150  D
+  151  :
+  152  clear
+  153  ls
+  154  touch ws7QnA.txt
+  155  vi ws7QnA.txt 
+  156  ls
+  157  git init
+  158  git add .
+  159  git commit -m "first commit"
+  160  git branch -M main
+  161  git remote add origin https://github.com/Yiralle/ws7.git
+  162  git push -u origin main
+  163  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/Y/ {print}' | wc -l
+  164  cd -
+  165  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/Y/ {print}' | wc -l
+  166  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/N/ {print}' | wc -l
+  167  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/N/ {print}' | wc -c
+  168  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/N/ {print}' | wc -w
+  169  awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv | head -1
+  170  awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv > /mnt/scratch/eric/ws8/VERIFIED.txt
+  171  awk '{if ($12 == "N") {print $0}}' amazon_reviews_us_Books_v1_02.tsv > /mnt/scratch/eric/ws8/UNVERIFIED.txt
+  172  clear
+  173  cd ws8
+  174  ls
+  175  awk '{print $14}' VERIFIED.txt | sort | uniq -c | sort -rn| head -10
+  176  awk '{print $14}' UNVERIFIED.txt | sort | uniq -c | sort -rn| head -10
+  177  history > cmds.log
+  178  cd -
+  179   cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/Y/ {print}' | wc -l
+  180   cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/N/ {print}' | wc -l
+  181  awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv | head -1
+  182  awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv | head -100 > verified.txt
+  183  awk '{if ($12 == "N") {print $0}}' amazon_reviews_us_Books_v1_02.tsv | head -100 > unverified.txt
+  184   awk '{print $14}' verified.txt | sort | uniq -c | sort -rn| head -10
+  185   awk '{print $14}' unverified.txt | sort | uniq -c | sort -rn| head -10
+  186  history > cmds.log
+  187  ls
+  188  rm cmds.log 
+  189  cd ws8
+  190  history > cmds.log
+  191  ls
+  192  cd /mnt/scratch/eric
+  193  grep "verified" amazon_reviews_us_Books_v1_02.tsv | head -2
+  194  cut -f12 amazon_reviews_us_Books_v1_02.tsv | head -2
+  195  cut -f12 amazon_reviews_us_Books_v1_02.tsv | head -6
+  196  cut -f12 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  197  awk '{print $12}' amazon_reviews_us_Books_v1_02.tsv | head -2
+  198  awk '{print $12}' amazon_reviews_us_Books_v1_02.tsv | head -3
+  199  awk '{print $12}' amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  200  awk '{print $11}' amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  201  awk '{print $13}' amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  202  awk '/verified/ {print}' amazon_reviews_us_Books_v1_02.tsv | head -3
+  203  awk '/verified/ {print}' amazon_reviews_us_Books_v1_02.tsv | head -1
+  204  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/Y/ {print}' | head -3
+  205  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/Y/ {print}' | wc -l
+  206  grep -f12 amazon_reviews_us_Books_v1_02.tsv | head -2
+  207  awk 'Y' {print}' | head -1
+  208  awk '/Y/ {print}'  amazon_reviews_us_Books_v1_02.tsv | head -1
+  209  awk '{if ($12 == "Y") {print}' amazon_reviews_us_Books_v1_02.tsv | head -1
+  210  awk '{if ($12 == "Y") {print $0}' amazon_reviews_us_Books_v1_02.tsv | head -1
+  211  awk '{if ($12 == "Y") {print $0;}' amazon_reviews_us_Books_v1_02.tsv | head -1
+  212  awk '{print $12}' amazon_reviews_us_Books_v1_02.tsv | grep 'Y' | head -1
+  213  awk '{print $0}' amazon_reviews_us_Books_v1_02.tsv | grep 'Y' | head -1
+  214  awk 'if ($12 == "Y") {print $0}' amazon_reviews_us_Books_v1_02.tsv |head -1
+  215  awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv |head -1
+  216  awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv | tail -1
+  217  awk '{if ($12 == "Y") {print}}' amazon_reviews_us_Books_v1_02.tsv | tail -1
+  218  awk '{if ($12 == "Y") {print}}' amazon_reviews_us_Books_v1_02.tsv > VERIFIED.txt
+  219  ls
+  220  clear
+  221  ls
+  222  clear
+  223  ls
+  224  cat VERIFIED.txt | head -2
+  225  cut -f13 VERIFIED.txt | sort | uniq -c | sort -rn | head -2
+  226  cut -f13 VERIFIED.txt | head -1
+  227  cut -f13 VERIFIED.txt | head -2
+  228  cut -f13 VERIFIED.txt | head -3
+  229  cut -f13 VERIFIED.txt | head -4
+  230  cut -f13 VERIFIED.txt | head -5
+  231  clear
+  232  head -1 amazon_reviews_us_Books_v1_02.tsv 
+  233  cut -f14 VERIFIED.txt | head -1
+  234  cut -f14 VERIFIED.txt | sort | uniq -c | sort -rn| head -2
+  235  clear
+  236  cut -f14 VERIFIED.txt | sort | uniq -c | sort -rn| head -2
+  237  awk '{print $14}' VERIFIED.txt | sort | uniq -c | sort -rn| head -2
+  238  awk '{print $14}' VERIFIED.txt | sort | uniq -c | sort -rn| head -10
+  239  clear
+  240  ls
+  241  rm VERIFIED.txt 
+  242  mkdir ws8
+  243  cd ws8
+  244  script ws8.txt
+  245  ls
+  246  vi ws8.txt 
+  247  tail -5 ws8.txt 
+  248  git init
+  249  git add .
+  250  git commit -m "first commit"
+  251  git branch -M main
+  252  git remote add origin https://github.com/Yiralle/ws8.git
+  253  git push -u origin main
+  254  ls
+  255  clear
+  256  ls
+  257  rm UNVERIFIED.txt 
+  258  rm VERIFIED.txt 
+  259  cd -
+  260  ls
+  261  cd ws8
+  262  ;s
+  263  ls
+  264  git remote rm origin
+  265  git init
+  266  git add .
+  267  git commit -m "first commit"
+  268  git branch -M main
+  269  git remote add origin https://github.com/Yiralle/ws8.git
+  270  git push -u origin main
+  271  df
+  272  df ws8.txt
+  273  clear
+  274  ls
+  275  script ws8.txt
+  276  vi ws8.txt 
+  277  tail ws8.txt | 
+  278  tail -5 ws8.txt 
+  279  git remote rm origin
+  280  git init
+  281  git remote rm origin
+  282  git add .
+  283  git commit -m "commit"
+  284  git branch -M main
+  285  git remote add origin https://github.com/Yiralle/ws8.git
+  286  git push -u origin main
+  287  ks
+  288  ls
+  289  cd -
+  290  mkdir WS8
+  291  ls
+  292  cp /ws7 /ws8
+  293  cp /mnt/scratch/eric/ws8 /mnt/scratch/eric/WS8
+  294  cp -r /mnt/scratch/eric/ws8 /mnt/scratch/eric/WS8
+  295  ls
+  296  rm -rf ws8
+  297  ls
+  298  cd WS8/
+  299  ls
+  300  cd ws8
+  301  ls
+  302  tail -5 ws8.txt 
+  303  cd -
+  304  ls
+  305  cd ws8
+  306  git init
+  307  git remote rm origin
+  308  git init
+  309  rm -rf .git
+  310  git init
+  311  git add .
+  312  git commit -m "first com"
+  313  git branch -M main
+  314  git remote add origin https://github.com/Yiralle/WS8.git
+  315  Yiralle
+  316  git push -u origin main
+  317  cd /mnt/scratch/eric
+  318  ls
+  319  mkdir ws9
+  320  cd ws9
+  321  ls
+  322  cd -
+  323  ls
+  324   ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv | head -2
+  325   ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  326  touch randomsample.sh
+  327  ls
+  328   ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  329   ./randomsample.sh $var amazon_reviews_us_Books_v1_02.tsv 
+  330  ls
+  331  rm randomsample.sh 
+  332  cp amazon_reviews_us_Books_v1_02.tsv /mnt/scratch/eric/ws9
+  333  cd ws9
+  334  ls
+  335  touch randomsample.sh
+  336   ./randomsample.sh $var amazon_reviews_us_Books_v1_02.tsv 
+  337   ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  338   ./randomsample.sh $1 amazon_reviews_us_Books_v1_02.tsv 
+  339  chmod u+x randomsample.sh 
+  340   ./randomsample.sh $1 amazon_reviews_us_Books_v1_02.tsv 
+  341  ls
+  342  head -3 randomsample.sh 
+  343   ./randomsample.sh $1 amazon_reviews_us_Books_v1_02.tsv | head -2
+  344   ./randomsample.sh $1 amazon_reviews_us_Books_v1_02.tsv | head -3
+  345   ./randomsample.sh $2 amazon_reviews_us_Books_v1_02.tsv | head -3
+  346   ./randomsample.sh $2 amazon_reviews_us_Books_v1_02.tsv | head -10
+  347  shuf -i 1-10 -n10 amazon_reviews_us_Books_v1_02.tsv 
+  348  shuf -i 1-10 -n1000 amazon_reviews_us_Books_v1_02.tsv 
+  349  shuf -i 1-10 -n100000 amazon_reviews_us_Books_v1_02.tsv 
+  350  shuf -n 10 amazon_reviews_us_Books_v1_02.tsv 
+  351  clear
+  352  shuf -n 1 amazon_reviews_us_Books_v1_02.tsv 
+  353  echo $((RANDOM % 100))
+  354  echo $RANDOM
+  355  shuf -n $((RANDOM % 1)) amazon_reviews_us_Books_v1_02.tsv 
+  356  shuf -n '$((RANDOM % 2))' amazon_reviews_us_Books_v1_02.tsv 
+  357  shuf -n $((RANDOM % 2)) amazon_reviews_us_Books_v1_02.tsv 
+  358  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-10 -n2) amazon_reviews_us_Books_v1_02.tsv 
+  359  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-10 -n2) a
+  360  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-10 -n2) amazon_reviews_us_Books_v1_02.tsv 
+  361  clear
+  362  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-10 -n2) amazon_reviews_us_Books_v1_02.tsv 
+  363  clear
+  364  ls
+  365  shuf -n $(( $(wc -l < $amazon_reviews_us_Books_v1_02.tsv) / 10 )) $amazon_reviews_us_Books_v1_02.tsv
+  366  shuf -i 1-10 -n10 amazon_reviews_us_Books_v1_02.tsv 
+  367  shuf --help
+  368  shuf -i 1-10 amazon_reviews_us_Books_v1_02.tsv 
+  369  shuf -i 1-10 -n amazon_reviews_us_Books_v1_02.tsv 
+  370  shuf -i 1-10 -n1 amazon_reviews_us_Books_v1_02.tsv 
+  371  shuf -i 1-10 -n0 amazon_reviews_us_Books_v1_02.tsv 
+  372  shuf -i 1-10 -n100000000 amazon_reviews_us_Books_v1_02.tsv 
+  373  clear
+  374  shuf -i 1-10 -n10 amazon_reviews_us_Books_v1_02.tsv 
+  375  shuf -i 1-100 n1 amazon_reviews_us_Books_v1_02.tsv 
+  376  shuf -i 1-100 amazon_reviews_us_Books_v1_02.tsv 
+  377  shuf -i 1-100amazon_reviews_us_Books_v1_02.tsv 
+  378  shuf -i 1-100 -n1 amazon_reviews_us_Books_v1_02.tsv 
+  379  touch cat.txt 
+  380  vi cat,txt
+  381  shuf -u 1-5 -n1 cat.txt 
+  382  shuf -i 1-5 -n1 cat.txt 
+  383  shuf -i 1-5 -n10 cat.txt 
+  384  shuf -i 1-5
+  385  shuf -i 1-100 -n5 amazon_reviews_us_Books_v1_02.tsv 
+  386  shuf -i 1-100 -n5 
+  387  shuf -i 1-100 -n1 
+  388  shuf -i 1-99 -n1 
+  389  shuf -i 1-99 -n1 = $RAND
+  390  $RAND =shuf -i 1-99 -n1
+  391  $RAND = shuf -i 1-99 -n1
+  392  RAND = shuf -i 1-99 -n1
+  393  clear
+  394  shuf -i 1-99 -n1 RAND
+  395  shuf -i 1-99 -n1 $RAND
+  396  echo $RAND
+  397  echo "$RAND"
+  398  ls
+  399  rm cat,txt 
+  400  rm cat.txt 
+  401  ls
+  402  clear
+  403  RAND = $(shuf -i 1-99 -n1)
+  404  $RAND = $(shuf -i 1-99 -n1)
+  405  clear
+  406  TEST = shuf -i 1-5 -n1
+  407  $TEST = shuf -i 1-5 -n1
+  408  OUTPUT = $(shuf -i 1-5 -n1)
+  409  RAND = "1"
+  410  touch RAND
+  411  ls
+  412  RAND = "1"
+  413  rm RAND 
+  414  ls
+  415  clear
+  416  v2=pqr
+  417  ls
+  418  clear
+  419  OUTPUT=$(shuf -i 1-5 -n1)
+  420  echo $OUTPUT
+  421  OUTPUT=$(shuf -i 1-5 -n1)
+  422  echo $OUTPUT
+  423  wc -l amazon_reviews_us_Books_v1_02.tsv 
+  424  shuf -n $(( $(wc -l < amazon_reviews_us_Books_v1_02.tsv) / 10 )) amazon_reviews_us_Books_v1_02.tsv 
+  425  clear
+  426  RAND=$(shuf -i 1-5 -n1)
+  427  echo $RAND
+  428  RAND=$(shuf -i 1-5 -n1)
+  429  echo $RAND
+  430  shuf -i 1-5 -n1
+  431  (shuf -i 1-5 -n1)/100
+  432  (shuf -i 1-5 -n1) / 100
+  433  $(shuf -i 1-5 -n1) / 100
+  434  $(shuf -i 1-5 -n1)/100
+  435  $(shuf -i 1-5 -n1) /100
+  436  $(shuf -i 1-5 -n1) / 100
+  437  $(shuf -i 1-5 -n1) 
+  438  (shuf -i 1-5 -n1) 
+  439  9]$ $(shuf -i 1-5 -n1) / 100
+  440  shuf -n $(( $(wc -l < amazon_reviews_us_Books_v1_02.tsv) * (100/$RAND )) amazon_reviews_us_Books_v1_02.tsv
+  441  echo $RAND
+  442  echo $RANd
+  443  echo $RAND
+  444  echo 100/$RAND
+  445  echo 100/"$RAND"
+  446  echo "100/ $RAND"
+  447  echo "100 / $RAND"
+  448  RAND
+  449  echo '100/ $RAND'
+  450  echo $RAND
+  451  echo $RAND+1
+  452  echo '$RAND'
+  453  echo "$RAND"
+  454  echo "$RAND"/5
+  455  echo "$RAND" / 5
+  456  echo "$RAND"
+  457  clear
+  458  DIV=100
+  459  echo $DIV
+  460  echo $(($RAND / %DIV))
+  461  echo $(($RAND / %DIV))| bc
+  462  cd /mnt/scratch/eric
+  463  ls
+  464  mkdir ws9
+  465  cd ws9
+  466  ls
+  467  cd -
+  468  ls
+  469   ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv | head -2
+  470   ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  471  touch randomsample.sh
+  472  ls
+  473   ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  474   ./randomsample.sh $var amazon_reviews_us_Books_v1_02.tsv 
+  475  ls
+  476  rm randomsample.sh 
+  477  cp amazon_reviews_us_Books_v1_02.tsv /mnt/scratch/eric/ws9
+  478  cd ws9
+  479  ls
+  480  touch randomsample.sh
+  481   ./randomsample.sh $var amazon_reviews_us_Books_v1_02.tsv 
+  482   ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  483   ./randomsample.sh $1 amazon_reviews_us_Books_v1_02.tsv 
+  484  chmod u+x randomsample.sh 
+  485   ./randomsample.sh $1 amazon_reviews_us_Books_v1_02.tsv 
+  486  ls
+  487  head -3 randomsample.sh 
+  488   ./randomsample.sh $1 amazon_reviews_us_Books_v1_02.tsv | head -2
+  489   ./randomsample.sh $1 amazon_reviews_us_Books_v1_02.tsv | head -3
+  490   ./randomsample.sh $2 amazon_reviews_us_Books_v1_02.tsv | head -3
+  491   ./randomsample.sh $2 amazon_reviews_us_Books_v1_02.tsv | head -10
+  492  shuf -i 1-10 -n10 amazon_reviews_us_Books_v1_02.tsv 
+  493  shuf -i 1-10 -n1000 amazon_reviews_us_Books_v1_02.tsv 
+  494  shuf -i 1-10 -n100000 amazon_reviews_us_Books_v1_02.tsv 
+  495  shuf -n 10 amazon_reviews_us_Books_v1_02.tsv 
+  496  clear
+  497  shuf -n 1 amazon_reviews_us_Books_v1_02.tsv 
+  498  echo $((RANDOM % 100))
+  499  echo $RANDOM
+  500  shuf -n $((RANDOM % 1)) amazon_reviews_us_Books_v1_02.tsv 
+  501  shuf -n '$((RANDOM % 2))' amazon_reviews_us_Books_v1_02.tsv 
+  502  shuf -n $((RANDOM % 2)) amazon_reviews_us_Books_v1_02.tsv 
+  503  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-10 -n2) amazon_reviews_us_Books_v1_02.tsv 
+  504  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-10 -n2) a
+  505  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-10 -n2) amazon_reviews_us_Books_v1_02.tsv 
+  506  clear
+  507  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-10 -n2) amazon_reviews_us_Books_v1_02.tsv 
+  508  clear
+  509  ls
+  510  shuf -n $(( $(wc -l < $amazon_reviews_us_Books_v1_02.tsv) / 10 )) $amazon_reviews_us_Books_v1_02.tsv
+  511  shuf -i 1-10 -n10 amazon_reviews_us_Books_v1_02.tsv 
+  512  shuf --help
+  513  shuf -i 1-10 amazon_reviews_us_Books_v1_02.tsv 
+  514  shuf -i 1-10 -n amazon_reviews_us_Books_v1_02.tsv 
+  515  shuf -i 1-10 -n1 amazon_reviews_us_Books_v1_02.tsv 
+  516  shuf -i 1-10 -n0 amazon_reviews_us_Books_v1_02.tsv 
+  517  shuf -i 1-10 -n100000000 amazon_reviews_us_Books_v1_02.tsv 
+  518  clear
+  519  shuf -i 1-10 -n10 amazon_reviews_us_Books_v1_02.tsv 
+  520  shuf -i 1-100 n1 amazon_reviews_us_Books_v1_02.tsv 
+  521  shuf -i 1-100 amazon_reviews_us_Books_v1_02.tsv 
+  522  shuf -i 1-100amazon_reviews_us_Books_v1_02.tsv 
+  523  shuf -i 1-100 -n1 amazon_reviews_us_Books_v1_02.tsv 
+  524  touch cat.txt 
+  525  vi cat,txt
+  526  shuf -u 1-5 -n1 cat.txt 
+  527  shuf -i 1-5 -n1 cat.txt 
+  528  shuf -i 1-5 -n10 cat.txt 
+  529  shuf -i 1-5
+  530  shuf -i 1-100 -n5 amazon_reviews_us_Books_v1_02.tsv 
+  531  shuf -i 1-100 -n5 
+  532  shuf -i 1-100 -n1 
+  533  shuf -i 1-99 -n1 
+  534  shuf -i 1-99 -n1 = $RAND
+  535  $RAND =shuf -i 1-99 -n1
+  536  $RAND = shuf -i 1-99 -n1
+  537  RAND = shuf -i 1-99 -n1
+  538  clear
+  539  shuf -i 1-99 -n1 RAND
+  540  shuf -i 1-99 -n1 $RAND
+  541  echo $RAND
+  542  echo "$RAND"
+  543  ls
+  544  rm cat,txt 
+  545  rm cat.txt 
+  546  ls
+  547  clear
+  548  RAND = $(shuf -i 1-99 -n1)
+  549  $RAND = $(shuf -i 1-99 -n1)
+  550  clear
+  551  TEST = shuf -i 1-5 -n1
+  552  $TEST = shuf -i 1-5 -n1
+  553  OUTPUT = $(shuf -i 1-5 -n1)
+  554  RAND = "1"
+  555  touch RAND
+  556  ls
+  557  RAND = "1"
+  558  rm RAND 
+  559  ls
+  560  clear
+  561  v2=pqr
+  562  ls
+  563  clear
+  564  OUTPUT=$(shuf -i 1-5 -n1)
+  565  echo $OUTPUT
+  566  OUTPUT=$(shuf -i 1-5 -n1)
+  567  echo $OUTPUT
+  568  wc -l amazon_reviews_us_Books_v1_02.tsv 
+  569  shuf -n $(( $(wc -l < amazon_reviews_us_Books_v1_02.tsv) / 10 )) amazon_reviews_us_Books_v1_02.tsv 
+  570  clear
+  571  RAND=$(shuf -i 1-5 -n1)
+  572  echo $RAND
+  573  RAND=$(shuf -i 1-5 -n1)
+  574  echo $RAND
+  575  shuf -i 1-5 -n1
+  576  (shuf -i 1-5 -n1)/100
+  577  (shuf -i 1-5 -n1) / 100
+  578  $(shuf -i 1-5 -n1) / 100
+  579  $(shuf -i 1-5 -n1)/100
+  580  $(shuf -i 1-5 -n1) /100
+  581  $(shuf -i 1-5 -n1) / 100
+  582  $(shuf -i 1-5 -n1) 
+  583  (shuf -i 1-5 -n1) 
+  584  9]$ $(shuf -i 1-5 -n1) / 100
+  585  shuf -n $(( $(wc -l < amazon_reviews_us_Books_v1_02.tsv) * (100/$RAND )) amazon_reviews_us_Books_v1_02.tsv
+  586  echo $RAND
+  587  echo $RANd
+  588  echo $RAND
+  589  echo 100/$RAND
+  590  echo 100/"$RAND"
+  591  echo "100/ $RAND"
+  592  echo "100 / $RAND"
+  593  RAND
+  594  echo '100/ $RAND'
+  595  echo $RAND
+  596  echo $RAND+1
+  597  echo '$RAND'
+  598  echo "$RAND"
+  599  echo "$RAND"/5
+  600  echo "$RAND" / 5
+  601  echo "$RAND"
+  602  clear
+  603  DIV=100
+  604  echo $DIV
+  605  echo $(($RAND / %DIV))
+  606  echo $(($RAND / %DIV))| bc
+  607  echo $(($RAND / $DIV))| bc
+  608  echo $RAND / 100 
+  609  echo $RAND / 100 | bc
+  610  echo ($RAND / 100 | bc)
+  611  echo "$RAND / 100" | bc
+  612  echo "$RAND / 100" | bc -l
+  613  echo $RAND / 100 | bc -l
+  614  RAND=$(shuf -i 1-5 -n1) / 100 | bc -l
+  615  RAND=$(shuf -i 1-5 -n1) 
+  616  num=("$RAND / 100" | bc -l
+  617  num=("$RAND / 100" | bc -l)
+  618  num=($RAND / 100 | bc -l)
+  619  num=$RAND / 100 | bc -l
+  620  clear
+  621  echo $RAND
+  622  echo $RAND/100 | bc -l
+  623  NUM=$RAND/100 | bc -l
+  624  echo $NUM
+  625  $RAND/100 | bc -l
+  626  echo $RAND/100 | bc -l
+  627  echo NUM
+  628  echo "$NUM"
+  629  RAND=$(shuf -i 1-5 -n1)
+  630  echo $RAND
+  631  RAND=$(shuf -i 1-5 -n1)
+  632  echo $RAND
+  633  $RAND/100 | bc -l
+  634  echo $RAND/100 | bc -l
+  635  NUM=$RAND/100 | bc -l
+  636  echo $NUM
+  637  shuf -n $(( $(wc -l < amazon_reviews_us_Books_v1_02.tsv) / 10 )) amazon_reviews_us_Books_v1_02.tsv
+  638  shuf -n $(( $(wc -l < amazon_reviews_us_Books_v1_02.tsv) * ($RAND/100 | bc -l )) amazon_reviews_us_Books_v1_02.tsv
+  639  clear
+  640  s9]$ shuf -
+  641  shuf -i 1-10 -n10 amazon_reviews_us_Books_v1_02.tsv 
+  642  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-1000000 -n1) amazon_reviews_us_Books_v1_02.tsv 
+  643  awk 'FNR==NR {list[$1]; next} {if (FNR in list) print}' <(shuf -i 1-5 -n1) amazon_reviews_us_Books_v1_02.tsv 
+  644  clear
+  645  ls
+  646  vi randomsample.sh 
+  647  bash randomsample.sh 
+  648  vi randomsample.sh 
+  649  bash randomsample.sh 
+  650  bash ./randomsample.sh 
+  651  ./randomsample.sh 
+  652  vi randomsample.sh 
+  653  ./randomsample.sh 
+  654  vi randomsample.sh 
+  655  ./randomsample.sh 
+  656  vi randomsample.sh 
+  657  ./randomsample.sh 
+  658  vi randomsample.sh 
+  659  ./randomsample.sh 
+  660  ls
+  661  vi randomsample.sh 
+  662  ./randomsample.sh 
+  663  vi randomsample.sh 
+  664  ./randomsample.sh 
+  665  vi randomsample.sh 
+  666  ./randomsample.sh 
+  667  awk 'FNR==NR {a[$1]; next} {if (FNR in a) print}' <(shuf -i 1-5 -n1) amazon_reviews_us_Books_v1_02.tsv 
+  668  vi randomsample.sh 
+  669  ./randomsample.sh 
+  670  vi randomsample.sh 
+  671  ./randomsample.sh 
+  672  vi randomsample.sh 
+  673  ./randomsample.sh 
+  674  clear
+  675  ls
+  676  vi randomsample.sh 
+  677  ./randomsample.sh 
+  678  vi randomsample.sh 
+  679  RAND=$(shuf -i 1-5 -n1)
+  680  echo $RAND
+  681  ./randomsample.sh 
+  682  vi randomsample.sh 
+  683  ./randomsample.sh 
+  684  vi randomsample.sh 
+  685  ./randomsample.sh | tail -3
+  686  vi randomsample.sh 
+  687  ./randomsample.sh 
+  688  vi randomsample.sh 
+  689  ./randomsample.sh 
+  690  vi randomsample.sh 
+  691  ./randomsample.sh 
+  692  vi randomsample.sh 
+  693  ./randomsample.sh 
+  694  clear
+  695  vi randomsample.sh 
+  696  ./randomsample.sh 
+  697  vi randomsample.sh 
+  698  ./randomsample.sh 
+  699  clear
+  700  vi randomsample.sh 
+  701  ls
+  702  rm randomsample.sh 
+  703  ls
+  704  script ws9.txt
+  705  touch randomsample.sh
+  706  vi randomsample.sh
+  707  ./randomsample.sh
+  708  chmod u+x randomsample.sh 
+  709  ./randomsample.sh
+  710  vi randomsample.sh 
+  711  ./randomsample.sh
+  712  clear
+  713  vi randomsample.sh 
+  714  history > cmds.log
+  715  ls
+  716  rm amazon_reviews_us_Books_v1_02.tsv 
+  717  ls
+  718  tail -5 ws9.txt 
+  719  clear
+  720  ls
+  721  vi randomsample.sh 
+  722  git init
+  723  git add .
+  724  git commit -m "first commit"
+  725  git branch -M main
+  726  git remote add origin https://github.com/Yiralle/ws9.git
+  727  git push -u origin main
+  728  cd /mnt/scratch/eric
+  729  ls
+  730   time python3 numbers.py
+  731  ls
+  732  time python3 numbers.py
+  733  touch numbers.sh
+  734  vi numbers.sh 
+  735  ./numbers.sh
+  736  chmod u+x numbers.sh
+  737  ./numbers.sh
+  738  vi numbers.sh
+  739  ./numbers.sh
+  740  ls
+  741  clear
+  742  cut -f8 amazon_reviews_us_Books_v1_02.tsv | head -3
+  743  cut -f9 amazon_reviews_us_Books_v1_02.tsv | head -3
+  744  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -1
+  745  max=`awk 'BEGIN{a=   0}{if ($1>0+a) a=$1} END{print a}' amazon_reviews_us_Books_v1_02.tsv`
+  746  max=`awk 'BEGIN{a=   0}{if ($8>0+a) a=$1} END{print a}' amazon_reviews_us_Books_v1_02.tsv`
+  747  max=`awk 'BEGIN{a=   0}{if ($9>0+a) a=$1} END{print a}' amazon_reviews_us_Books_v1_02.tsv`
+  748  cut -d" " -f1 file | sort -n | {      read line;     echo "min=$line";     while read line; do max=$line; done;     echo "max=$max"; }
+  749  cut -d" " -f9 amazon_reviews_us_Books_v1_02.tsv | sort -n | {      read line;     echo "min=$line";     while read line; do max=$line; done;     echo "max=$max"; }
+  750  cut -d" " -f8 amazon_reviews_us_Books_v1_02.tsv | sort -n | {      read line;     echo "min=$line";     while read line; do max=$line; done;     echo "max=$max"; }
+  751  clear
+  752  cut -f8 amazon_reviews_us_Books_v1_02.tsv | head -10
+  753  cut -f9 amazon_reviews_us_Books_v1_02.tsv | head -10
+  754  cut -f9 amazon_reviews_us_Books_v1_02.tsv | tail -10
+  755  cut -f9 amazon_reviews_us_Books_v1_02.tsv | head -3 | sort -r
+  756  cut -f9 amazon_reviews_us_Books_v1_02.tsv | head -3 | sort -nr
+  757  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort -rn| head -3
+  758  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort -rn| tail -3
+  759  clear
+  760  vi numbers.sh
+  761  ./numbers.sh
+  762  vi numbers.sh
+  763  ./numbers.sh
+  764  awk '{ total += $8 } END { print total/NR }' amazon_reviews_us_Books_v1_02.tsv 
+  765  awk '{ total += $9 } END { print total/NR }' amazon_reviews_us_Books_v1_02.tsv 
+  766  cut -f9 amazon_reviews_us_Books_v1_02.tsv | awk '{ total += $1 } END { print total/NR }'
+  767  vi numberssh
+  768  ls
+  769  rm numberssh
+  770  vi numbers.sh
+  771  ./numbers.sh
+  772  time ./numbers.sh
+  773  ls
+  774  rm numbers.sh
+  775  ls
+  776  clear
+  777  ls
+  778  mkdir ws10
+  779  cd ws10
+  780  script ws10.txt
+  781  cd -
+  782  ls
+  783  touch numbers.sh
+  784  vi numbers.sh
+  785  time python3 numbers.py 
+  786  chmod -u+x numbers.sh
+  787  time ./numbers.sh
+  788  chmod u+x numbers.sh
+  789  time ./numbers.sh
+  790  chmod u+x numbers.sh
+  791  ./numbers.sh
+  792  ls
+  793  vi numbers.sh
+  794  head -3 numbers.sh
+  795  rm numbers.sh
+  796  ls
+  797  cd ws10
+  798  ls
+  799  script ws10.txt
+  800  cd -
+  801  clear
+  802  touch numbers.sh
+  803  ls
+  804  vi numbers.sh
+  805  ls
+  806  time python3 numbers.py 
+  807  ls
+  808  chmod u+x numbers.sh
+  809  ./numbers.sh
+  810  time ./numbers.sh
+  811  cd ws10
+  812  ls
+  813  history > cmds.log
+  814  ls
+  815  vi ws10.txt
+  816  ls
+  817  git init
+  818  git add .
+  819  git commit -m "first commit"
+  820  git branch -M main
+  821  git remote add origin https://github.com/Yiralle/ws10.git
+  822  git push -u origin main
+  823  ls
+  824  cd -
+  825  ls
+  826  vi numbers.sh
+  827  ls
+  828  clear
+  829  ls
+  830  grep replied_to downloaded_tweets_extend_original_nolf2.tsv | head -5
+  831  grep retweets downloaded_tweets_extend_original_nolf2.tsv | head -10
+  832  clear
+  833  grep retweeted downloaded_tweets_extend_original_nolf2.tsv | head -10
+  834  grep replied_to downloaded_tweets_extend_original_nolf2.tsv > repliedto.tsv
+  835  grep retweeted downloaded_tweets_extend_original_nolf2.tsv  > retweeted.tsv
+  836  ls
+  837  awk '{print $1}' a3.tsv > influencers.tsv
+  838  head -3 influencers.tsv 
+  839  fgrep -f influencers.tsv repliedto.tsv | head -3
+  840  fgrep -f influencers.tsv retweeted.tsv | head -3
+  841  clear
+  842  mkdir infl_replies
+  843  mkdir infl_retweeted
+  844  ls
+  845  for INFL in `cat influencers.tsv` ; do grep $INFL repliedto.tsv | awk -F "\t" '{print $4}' | head -100 > infl_replies/$INFL.hashtags ; done
+  846  for INFL in `cat influencers.tsv` ; do grep $INFL retweeted.tsv | awk -F "\t" '{print $4}' | head -100 > infl_retweeted/$INFL.hashtags ; done
+  847  ls
+  848  cd infl_retweeted/
+  849  ls
+  850  cd /mnt/scratch/eric
+  851  ls
+  852  mkdir a5
+  853  clear
+  854  grep replied_to downloaded_tweets_extend_nolf2.tsv | wc
+  855  ls
+  856  cd a5
+  857  ls
+  858  clear
+  859  cd -
+  860  ls
+  861  head -3 amazon_reviews_us_Books_v1_02.tsv 
+  862  clear
+  863  head -1 amazon_reviews_us_Books_v1_02.tsv 
+  864  clear
+  865  ls
+  866  head -3 downloaded_tweets_extend_
+  867  head -3 downloaded_tweets_extend_original_nolf2.tsv 
+  868  cd 
+  869  ls
+  870  pwd
+  871  cd A3
+  872  ls
+  873  head Q1.csv 
+  874  ls
+  875  cp Q1.csv /mnt/scratch/eric
+  876  cd
+  877  cd mnt/scratch/eric
+  878  cd /mnt/scratch/eric
+  879  ls
+  880  clear
+  881  pwd
+  882  ls
+  883  head -3 Q1.csv 
+  884  clear
+  885  awk '{print $1}' Q1.csv | head -3
+  886  awk '{print $1}' Q1.csv > influencer.tsv
+  887  clear
+  888  ls
+  889  cp downloaded_tweets_extend_original_nolf2.tsv /mnt/scratch/eric/a5
+  890  cp influencer.tsv /mnt/scratch/eric/a5
+  891  cd a5
+  892  ls
+  893  clear
+  894  ls
+  895  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; done
+  896  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; done
+  897  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; done ; done
+  898  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; done
+  899  l infl_replies/
+  900  ls
+  901  clear
+  902  grep replied_to downloaded_tweets_extend_original_nolf2.tsv > repliedto.tsv
+  903  fgrep -f influencer.tsv repliedto.tsv | head -3
+  904  fgrep -f influencer.tsv repliedto.tsv | wc
+  905  fgrep -f influencer.tsv repliedto.tsv | awk -F "\t" '{print $4}' | head -3
+  906  fgrep -f influencer.tsv repliedto.tsv | awk -F "\t" '{print $4}' | head -10
+  907  fgrep -f influencer.tsv repliedto.tsv | awk -F "\t" '{print $4}' | tail -3
+  908  clear
+  909  mkdir infl_replies
+  910  ls
+  911  for INFL in `cat influencer.tsv` ; do grep $INFL repliedto.tsv | awk -F "\t" '{print $4}' | head -10 > infl_replies/$INFL.hashtags ; done
+  912  ls -latr
+  913  cd infl_replies/
+  914  ls
+  915  clear
+  916  ls
+  917  clear
+  918  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; done
+  919  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; done
+  920  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; done ; done
+  921  for FILE in `ls` ; do for HASHTAG in 'cat $FILE' ; done ; done
+  922  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; done 
+  923  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; done 
+  924  for FILE in `ls`; do for HASHTAG in `cat $FILE`; done 
+  925  for FILE in `ls`; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l; done
+  926  for FILE in `ls`; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l; done ; done
+  927  done
+  928  done
+  929  done
+  930  for FILE in `ls`; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l; done ; done
+  931  done
+  932  done
+  933  done
+  934  clear
+  935  clear
+  936  for FILE in `ls`; do for HASHTAG in `cat $FILE`;  done
+  937  clear
+  938  ls
+  939  clear
+  940  cd -
+  941  ls
+  942  rm infl_replies
+  943  rm -rf infl_replies/
+  944  rm influencer.tsv 
+  945  rm repliedto.tsv 
+  946  ls
+  947  script a5.txt
+  948  cd -
+  949  cd .
+  950  ls
+  951  cd -
+  952  ls
+  953  cd
+  954  cd /mnt/scratch/eric
+  955  ls
+  956  cp Q1.csv a5/
+  957  cd a5
+  958  ls
+  959  rm Q1.csv 
+  960  cd -
+  961  ls
+  962  cp Q1.csv /mnt/scratch/eric/a5/a3.tsv
+  963  cd a5
+  964  clear
+  965  ls
+  966  script a5.txt
+  967  clear
+  968  ls
+  969  vi a5.txt
+  970  cd infl_retweeted/
+  971  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; done
+  972   for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`wc -l $FILE`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; echo "$HASHTAG $FILE $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset" ; done ; done
+  973   for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`wc -l $FILE`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall$count_H_in_C $count_hashtags_in_C $count_H_entire_dataset\$count_hashtags_entire_dataset" ; done ; done
+  974  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; do  count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l ; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+  975  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; do  count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l` ; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+  976  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; do  count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l` ; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+  977  clear
+  978  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; do  count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l` ; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l' ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+  979  clear
+  980  for FILE in `ls` ; do for HASHTAG in `cat $FILE` ; do  count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l` ; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l' ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+  981  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l` ; count_H_e; ntire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=100; frequency_H_in_C=`echo "$count_H_in_
+  982  C / $count_hashtags_in_C" | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H
+  983  _in_C / $frequency_H_overall" | bc -l'  ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall   $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+  984  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l` ; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=100; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l'  ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall   $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+  985   for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`wc -l $FILE`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; echo "$HASHTAG $FILE $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset\$count_hashtags_entire_dataset" ; done ; done
+  986  cd /mnt/scratch/eric
+  987  ls
+  988  cd a5
+  989  ls
+  990  cd infl_replies
+  991  ls
+  992  clear
+  993  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l` ; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=100; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l'  ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall   $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+  994  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`wc -l $FILE`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; echo "$HASHTAG $FILE $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset\$count_hashtags_entire_dataset" ; done ; done
+  995  clear
+  996   for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`wc -l $FILE`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=5; echo "$HASHTAG $FILE $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset\$count_hashtags_entire_dataset" ; done ; done
+  997   for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`wc -l $FILE`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=3928; echo "$HASHTAG $FILE $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset \$count_hashtags_entire_dataset" ; done ; done
+  998  clear
+  999  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l` ; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l` ; count_hashtags_entire_dataset=100; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`; frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l'  ; echo "$HASHTAG $FILE $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall   $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+done
+
+ 1000  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l`; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`;  frequency_H_overall=`echo "count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l` ; echo "$HASHTAG $FILE   $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+ 1001  clear
+ 1002  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l`; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`;  frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l` ; echo "$HASHTAG $FILE   $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+ 1003  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l`; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`;  frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l` ; echo "$HASHTAG $FILE   $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " | head -1; done ; done
+ 1004  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l`; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`;  frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l` ; echo "$HASHTAG $FILE   $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done| head -1 ; done
+ 1005  for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l`; count_H_entire_dataset=`grep $HASHTAG ../repliedto.tsv | wc -l`; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`;  frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l` ; echo "$HASHTAG $FILE   $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done > /mnt/scratch/eric/a5/replied_to_a5.tsv
+ 1006  cd -
+ 1007  ls
+ 1008  head -1 replied_to_a5.tsv 
+ 1009  head -3 replied_to_a5.tsv 
+ 1010  cd infl_retweeted/
+ 1011  ls
+ 1012  clear
+ 1013  cd -
+ 1014  ls
+ 1015  cd infl_retweeted/
+ 1016   for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l`; count_H_entire_dataset=`grep $HASHTAG ../retweeted.tsv | wc -l`; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`;  frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l` ; echo "$HASHTAG $FILE   $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done
+ 1017   for FILE in `ls` ; do for HASHTAG in `cat $FILE`; do count_H_in_C=`grep $HASHTAG $FILE | wc -l` ; count_hashtags_in_C=`cat $FILE | wc -l`; count_H_entire_dataset=`grep $HASHTAG ../retweeted.tsv | wc -l`; count_hashtags_entire_dataset=3928; frequency_H_in_C=`echo "$count_H_in_C / $count_hashtags_in_C" | bc -l`;  frequency_H_overall=`echo "$count_H_entire_dataset / $count_hashtags_entire_dataset" | bc -l` ; relative_frequency_H_C=`echo "$frequency_H_in_C / $frequency_H_overall" | bc -l` ; echo "$HASHTAG $FILE   $relative_frequency_H_C $frequency_H_in_C $frequency_H_overall $count_H_in_C $count_hashtags_in_C $count_H_entire_dataset $count_hashtags_entire_dataset " ; done ; done > /mnt/scratch/eric/a5/retweeted_a5.tsv
+ 1018  clear
+ 1019  cd -
+ 1020  ls
+ 1021  cat retweeted_a5.tsv 
+ 1022  vi a5.txt
+ 1023  head -10 replied_to_a5.tsv 
+ 1024  vi a5.txt
+ 1025  ls
+ 1026  clear
+ 1027  ls
+ 1028  rm a3.tsv 
+ 1029  rm downloaded_tweets_extend_original_nolf2.tsv 
+ 1030  rm repliedto.tsv 
+ 1031  rm retweeted.tsv 
+ 1032  rm influencers.tsv 
+ 1033  ls
+ 1034  rm -rf infl_replies/
+ 1035  rm -rf infl_retweeted/
+ 1036  ls
+ 1037  history > cmds.log
